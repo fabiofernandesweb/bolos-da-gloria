@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bolos da Glória - Confeitaria artesanal com bolos, doces e tortas feitos com amor e ingredientes selecionados. Encomende agora!">
+    <meta property="og:title" content="Bolos da Glória | Confeitaria Artesanal">
+    <meta property="og:description"
+        content="Bolos artesanais feitos com amor. Tradição, qualidade e sabor em cada fatia">
+    <meta property="og:type" content="website">
+    <title>Bolos da Glória | Confeitaria Artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./responsivo.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar" role="navigation" aria-label="Menu principal">
+        <a href="#home" class="nav-logo" aria-label="Bolos da Glória - Início">Bolos da Glória</a>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#encomendas" class="nav-cta">Fazer Encomenda</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu de navegação mobile">
+        <button class="mobile-close" id="mobileClose" aria-label="Fechar menu">✕</button>
+        <a href="#home" onclick="closeMobile()">Início</a>
+        <a href="#cardapio" onclick="closeMobile()">Cardápio</a>
+        <a href="#galeria" onclick="closeMobile()">Galeria</a>
+        <a href="#sobre" onclick="closeMobile()">Sobre Nós</a>
+        <a href="#depoimentos" onclick="closeMobile()">Depoimentos</a>
+        <a href="#contato" onclick="closeMobile()">Contato</a>
+        <a href="#encomendas" class="mobile-menu-cta" onclick="closeMobile()">Fazer Encomenda</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" aria-label="Seção principal">
+        <div id="hero">
+            <div class="hero-bg" role="img" aria-label="Bolo artesanal decorado"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-badge">Artesanal desde 2018</div>
+                <h1>Cada fatia carrega<br><em>um sabor que fica</em><br>na memória</h1>
+                <p class="hero-sub">Bolos feitos com amor, ingredientes selecionados e uma tradição de mais de 8 anos
+                    adoçando momentos especiais.</p>
+                <div class="hero-btns">
+                    <a href="#cardapio" class="btn-primary">Ver Cardápio</a>
+                    <a href="#encomendas" class="btn-outline">Encomendar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-tag">Por que nos escolher</div>
+                <h2 class="section-title">O que faz a Glória especial</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><img src="./img/icons8-bolo-50.png" alt="imagem de bolo"></div>
+                    <h3>Bolos Artesanais</h3>
+                    <p>Cada bolo é produzido individualmente, com receitas próprias e atenção a cada detalhe, do recheio
+                        à decoração.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><img src="./img/icons8-ingredientes-50.png" alt="imagem de ingredientes">
+                    </div>
+                    <h3>Ingredientes Selecionados</h3>
+                    <p>Usamos apenas insumos de alta qualidade: manteiga real, chocolate belga, frutas frescas e
+                        farinhas especiais.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><img src="./img/icons8-feito-à-mão-50.png" alt="imagem do amor"></div>
+                    <h3>Feito com Amor</h3>
+                    <p>Cada encomenda é tratada como única. Seu evento merece um bolo que conte uma história e encante
+                        os olhos.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><img src="./img/icons8-entrega-50.png" alt="imagem de entrega"></div>
+                    <h3>Entrega Pontual</h3>
+                    <p>Entregamos na hora certa, com embalagem especial para que o bolo chegue perfeito até a sua festa.
+                    </p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><img src="./img/icons8-hand-with-pen-50.png" alt="imagem de design"></div>
+                    <h3>Design Personalizado</h3>
+                    <p>Criamos o tema do seu sonho. Bolos personalizados para casamentos, aniversários, bodas e eventos
+                        corporativos.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><img src="./img/icons8-estrela-50.png" alt="imagem de avaliações"></div>
+                    <h3>+500 Avaliações 5★</h3>
+                    <p>Mais de quinhentos clientes satisfeitos que voltam e indicam. Nossa reputação é construída um
+                        bolo por vez.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section id="cardapio" class="section">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-tag">Nosso Cardápio</div>
+                <h2 class="section-title">Escolha o sabor da sua história</h2>
+                <p class="section-subtitle">Explore nossa seleção de bolos, doces e tortas feitos com ingredientes
+                    premium.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="search-box reveal">
+                <input type="search" placeholder="Buscar no cardápio..." id="searchInput" aria-label="Buscar produtos">
+                <button class="search-btn" onclick="filterProducts()">Buscar</button>
+            </div>
+            <div class="menu-filters reveal" role="group" aria-label="Filtros de categoria">
+                <button class="filter-btn active" onclick="setFilter(this,'all')">Todos</button>
+                <button class="filter-btn" onclick="setFilter(this,'tradicional')">Bolos Tradicionais</button>
+                <button class="filter-btn" onclick="setFilter(this,'gourmet')">Bolos Gourmet</button>
+                <button class="filter-btn" onclick="setFilter(this,'casamento')">Casamento</button>
+                <button class="filter-btn" onclick="setFilter(this,'doces')">Doces</button>
+                <button class="filter-btn" onclick="setFilter(this,'tortas')">Tortas</button>
+                <button class="filter-btn" onclick="setFilter(this,'combos')">Combos</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+
+                <article class="product-card" data-cat="tradicional" data-name="bolo de cenoura">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&auto=format&fit=crop&q=75"
+                            alt="Bolo de Cenoura com Cobertura de Chocolate" class="product-img" loading="lazy">
+                        <span class="product-badge">Mais Pedido</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Bolo de Cenoura</h3>
+                        <p>Macio, fofo e com calda irresistível de chocolate meio amargo. A tradição que nunca sai de
+                            moda.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 89</span>
+                            <button class="btn-sm"
+                                onclick="alert('Entre em contato pelo WhatsApp para encomendar!')">Encomendar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="gourmet" data-name="bolo red velvet">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=600&auto=format&fit=crop&q=75"
+                            alt="Bolo Red Velvet" class="product-img" loading="lazy">
+                        <span class="product-badge">Premium</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Red Velvet Gourmet</h3>
+                        <p>Camadas de veludo vermelho com cream cheese artesanal. Visual impactante, sabor inesquecível.
+                        </p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 150</span>
+                            <button class="btn-sm"
+                                onclick="alert('Entre em contato pelo WhatsApp para encomendar!')">Encomendar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="casamento" data-name="bolo de casamento naked">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=600&auto=format&fit=crop&q=75"
+                            alt="Bolo de Casamento Naked Cake" class="product-img" loading="lazy">
+                        <span class="product-badge">Especial</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Naked Cake Nupcial</h3>
+                        <p>Elegância natural com camadas expostas, flores frescas e frutas silvestres. Para momentos
+                            eternos.</p>
+                        <div class="product-footer">
+                            <span class="product-price">A partir de R$ 350</span>
+                            <button class="btn-sm"
+                                onclick="document.getElementById('encomendas').scrollIntoView({behavior:'smooth'})">Encomendar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="tradicional" data-name="bolo de chocolate">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&auto=format&fit=crop&q=75"
+                            alt="Bolo de Chocolate Intenso" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <h3>Chocolate Intenso</h3>
+                        <p>Massa úmida de cacau com ganache de chocolate 70%. Para os amantes do chocolate de verdade.
+                        </p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 110</span>
+                            <button class="btn-sm"
+                                onclick="alert('Entre em contato pelo WhatsApp para encomendar!')">Encomendar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="doces" data-name="brigadeiro gourmet">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&auto=format&fit=crop&q=75"
+                            alt="Brigadeiros Gourmet" class="product-img" loading="lazy">
+                        <span class="product-badge">Artesanal</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Brigadeiros Gourmet</h3>
+                        <p>Caixa com 12 unidades. Sabores variados: pistache, maracujá, limão siciliano e chocolate
+                            belga.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 48</span>
+                            <button class="btn-sm"
+                                onclick="alert('Entre em contato pelo WhatsApp para encomendar!')">Encomendar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="tortas" data-name="torta de morango">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&auto=format&fit=crop&q=75"
+                            alt="Torta de Morango" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <h3>Torta de Morango</h3>
+                        <p>Base crocante, creme pasteleiro delicado e morangos frescos selecionados da temporada.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 120</span>
+                            <button class="btn-sm"
+                                onclick="alert('Entre em contato pelo WhatsApp para encomendar!')">Encomendar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="gourmet" data-name="bolo de limão siciliano">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?w=600&auto=format&fit=crop&q=75"
+                            alt="Bolo de Limão Siciliano com Merengue" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                        <h3>Limão Siciliano com Merengue</h3>
+                        <p>Leveza e frescor em camadas: massa aerada, creme de limão e merengue maçaricado na hora.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 135</span>
+                            <button class="btn-sm"
+                                onclick="alert('Entre em contato pelo WhatsApp para encomendar!')">Encomendar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="combos" data-name="kit festa completo">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600&auto=format&fit=crop&q=75"
+                            alt="Kit Festa Completo" class="product-img" loading="lazy">
+                        <span class="product-badge">Kit Especial</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Kit Festa Completo</h3>
+                        <p>Bolo personalizado + 50 brigadeiros + 20 beijinhos. Tudo para adoçar sua celebração com
+                            estilo.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 260</span>
+                            <button class="btn-sm"
+                                onclick="document.getElementById('encomendas').scrollIntoView({behavior:'smooth'})">Encomendar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-cat="casamento" data-name="bolo de casamento dourado">
+                    <div class="product-img-wrap">
+                        <img src="./img/pexels-caleboquendo-34539890.jpg"
+                            alt="Bolo de Casamento Dourado" class="product-img" loading="lazy">
+                        <span class="product-badge">Luxo</span>
+                    </div>
+                    <div class="product-body">
+                        <h3>Casamento Dourado</h3>
+                        <p>Três andares com detalhes em ouro comestível, flores de açúcar e recheios à sua escolha.</p>
+                        <div class="product-footer">
+                            <span class="product-price">A partir de R$ 680</span>
+                            <button class="btn-sm"
+                                onclick="document.getElementById('encomendas').scrollIntoView({behavior:'smooth'})">Encomendar</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="galeria" class="section">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-tag">Nossa Galeria</div>
+                <h2 class="section-title">Criações que encantam</h2>
+                <p class="section-subtitle">Cada obra é única. Veja algumas das nossas criações mais especiais.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid reveal" id="galleryGrid">
+                <button class="gallery-item"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200&auto=format&fit=crop')"
+                    aria-label="Ver imagem: Bolo decorado com flores">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&auto=format&fit=crop&q=75"
+                        alt="Bolo artesanal decorado com flores" loading="lazy">
+                </button>
+                <button class="gallery-item"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=1200&auto=format&fit=crop')"
+                    aria-label="Ver imagem: Naked Cake nupcial">
+                    <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=600&auto=format&fit=crop&q=75"
+                        alt="Naked cake nupcial com flores frescas" loading="lazy">
+                </button>
+                <button class="gallery-item"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=1200&auto=format&fit=crop')"
+                    aria-label="Ver imagem: Bolo de cenoura">
+                    <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&auto=format&fit=crop&q=75"
+                        alt="Bolo de cenoura artesanal" loading="lazy">
+                </button>
+                <button class="gallery-item"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=1200&auto=format&fit=crop')"
+                    aria-label="Ver imagem: Red Velvet">
+                    <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=600&auto=format&fit=crop&q=75"
+                        alt="Red Velvet premium" loading="lazy">
+                </button>
+                <button class="gallery-item"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1200&auto=format&fit=crop')"
+                    aria-label="Ver imagem: Torta de morango">
+                    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&auto=format&fit=crop&q=75"
+                        alt="Torta de morango fresco" loading="lazy">
+                </button>
+                <button class="gallery-item"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=1200&auto=format&fit=crop')"
+                    aria-label="Ver imagem: Bolo de chocolate">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&auto=format&fit=crop&q=75"
+                        alt="Bolo de chocolate intenso" loading="lazy">
+                </button>
+                <button class="gallery-item"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1562777717-dc6984f65a63?w=1200&auto=format&fit=crop')"
+                    aria-label="Ver imagem: Bolo de limão">
+                    <img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?w=600&auto=format&fit=crop&q=75"
+                        alt="Bolo de limão siciliano com merengue" loading="lazy">
+                </button>
+                <button class="gallery-item" onclick="openLightbox('./img/pexels-caleboquendo-34539890.jpg')"
+                    aria-label="Ver imagem: Bolo dourado">
+
+                    <img src="./img/pexels-caleboquendo-34539890.jpg" alt="Bolo de casamento dourado elegante"
+                        loading="lazy">
+
+                </button>
+                <button class="gallery-item"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=1200&auto=format&fit=crop')"
+                    aria-label=" Ver imagem: Kit festa">
+                    <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=600&auto=format&fit=crop&q=75"
+                        alt="Kit festa completo com doces" loading="lazy">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Visualização de imagem" aria-modal="true">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fechar">✕</button>
+        <img id="lightboxImg" src="" alt="Imagem ampliada da galeria">
+    </div>
+
+    <!-- ABOUT -->
+    <section id="sobre" class="section" style="background:var(--cream)">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-img-wrap reveal">
+                    <img src="./img/pexels-cristian-rojas-8477968.jpg"
+                        alt="Confeiteira Gloria preparando bolo artesanal" class="about-img-main" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&auto=format&fit=crop&q=75"
+                        alt="Bolo artesanal decorado" class="about-img-accent" loading="lazy">
+                </div>
+                <div class="about-text reveal">
+                    <div class="about-badge">
+                        <strong>8</strong>
+                        <span>Anos de Tradição</span>
+                    </div>
+                    <h2>Uma história feita com <em style="font-style:italic;color:var(--rose-deep)">farinha, afeto</em>
+                        e muito açúcar</h2>
+                    <p>Tudo começou na cozinha pequena da Glória, em 2018, quando ela decidiu transformar sua paixão por
+                        confeitaria em um sonho. Com receitas da avó, técnicas aprimoradas e um amor incondicional pelo
+                        que faz, nasceu a confeitaria que hoje encanta famílias em toda a região.</p>
+                    <p>Acreditamos que um bolo não é apenas sobremesa — é a memória que ficará para sempre em uma festa
+                        de aniversário, em um casamento, em uma bodas de ouro. Por isso, cada detalhe importa: da
+                        seleção dos ingredientes à entrega final.</p>
+                    <p>Nossa produção é 100% artesanal. Sem conservantes, sem atalhos. Apenas ingredientes reais,
+                        receitas testadas e o cuidado que só quem ama o que faz consegue entregar.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-num">+3.200</div>
+                            <div class="stat-label">Bolos entregues</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">+500</div>
+                            <div class="stat-label">Clientes felizes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">8</div>
+                            <div class="stat-label">Anos no mercado</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="depoimentos" class="section">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-tag">Depoimentos</div>
+                <h2 class="section-title">O que nossos clientes dizem</h2>
+                <p class="section-subtitle">Palavras de quem já viveu a experiência Bolos da Glória.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonials-grid">
+
+                <div class="testimonial-card reveal">
+                    <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                    <blockquote>"O bolo do casamento da minha filha foi perfeito. As pessoas até hoje falam do sabor e
+                        da beleza. Glória transformou nosso sonho em realidade com uma delicadeza incrível."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar-placeholder" aria-hidden="true">MF</div>
+                        <div>
+                            <div class="author-name">Maria das Flores</div>
+                            <div class="author-role">Mãe da noiva · Fortaleza, CE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                    <blockquote>"Encomendei o kit festa para o aniversário de 1 ano do meu filho. Chegou no horário,
+                        lindo demais e gostoso igual. Todos os convidados pediram o contato!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar-placeholder" aria-hidden="true">JS</div>
+                        <div>
+                            <div class="author-name">Juliana Santos</div>
+                            <div class="author-role">Cliente fiel · Caucaia, CE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                    <blockquote>"Sou cliente há 5 anos e nunca me decepcionei. O Red Velvet é uma obra de arte. Glória
+                        tem um dom especial: transforma ingredientes simples em experiências extraordinárias."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar-placeholder" aria-hidden="true">RC</div>
+                        <div>
+                            <div class="author-name">Ricardo Costa</div>
+                            <div class="author-role">Cliente desde 2019 · Maracanaú, CE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                    <blockquote>"Os brigadeiros gourmet são impecáveis. Presenteei minha equipe corporativa e o feedback
+                        foi unânime: o melhor brigadeiro que já comeram. Recomendo demais!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar-placeholder" aria-hidden="true">PA</div>
+                        <div>
+                            <div class="author-name">Patricia Almeida</div>
+                            <div class="author-role">Diretora Comercial · Fortaleza, CE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                    <blockquote>"Atendimento humanizado e produto de altíssima qualidade. Pedi um bolo personalizado com
+                        apenas 3 dias de antecedência e ficou incrível. Superou todas as expectativas!"</blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar-placeholder" aria-hidden="true">LM</div>
+                        <div>
+                            <div class="author-name">Lucas Moreira</div>
+                            <div class="author-role">Primeiro pedido · Eusébio, CE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <div class="stars" aria-label="5 estrelas">★★★★★</div>
+                    <blockquote>"Nossa bodas de prata foi ainda mais especial com o bolo da Glória. Ela reproduziu o
+                        bolo do nosso casamento de 25 anos atrás! Emocionante. Não tem igual em Fortaleza."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar-placeholder" aria-hidden="true">EV</div>
+                        <div>
+                            <div class="author-name">Elisa & Valter</div>
+                            <div class="author-role">Clientes especiais · Fortaleza, CE</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ENCOMENDAS -->
+    <section id="encomendas" class="section">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-tag">Faça sua Encomenda</div>
+                <h2 class="section-title">Vamos criar algo especial juntos</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="order-grid">
+                <div class="order-info reveal">
+                    <h2>Como funciona a encomenda?</h2>
+                    <p>Nosso processo é simples e personalizado para garantir que você receba exatamente o que sonhou.
+                    </p>
+                    <ul class="order-steps">
+                        <li class="order-step">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <strong>Preencha o formulário</strong>
+                                <span>Nos conte sobre o evento, tamanho, sabor e tema desejado.</span>
+                            </div>
+                        </li>
+                        <li class="order-step">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <strong>Confirmação e orçamento</strong>
+                                <span>Entraremos em contato em até 24h com o orçamento e opções personalizadas.</span>
+                            </div>
+                        </li>
+                        <li class="order-step">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <strong>Aprovação e sinal</strong>
+                                <span>Confirme o pedido com 50% de sinal para reservar sua data.</span>
+                            </div>
+                        </li>
+                        <li class="order-step">
+                            <div class="step-num">4</div>
+                            <div class="step-content">
+                                <strong>Entrega ou retirada</strong>
+                                <span>Receba seu bolo perfeito no local e horário combinados.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div
+                        style="background:var(--white);border-radius:16px;padding:1.2rem 1.5rem;border-left:4px solid var(--gold)">
+                        <strong style="color:var(--brown-dark);font-size:.88rem">⚠️ Prazo mínimo:</strong>
+                        <p style="font-size:.85rem;color:var(--text-light);margin-top:.3rem;margin-bottom:0">Bolos
+                            simples: 3 dias · Bolos decorados: 5 dias · Casamento: mínimo 15 dias</p>
+                    </div>
+                </div>
+                <div class="order-form reveal">
+                    <h3
+                        style="font-family:'Playfair Display',serif;color:var(--brown-dark);font-size:1.5rem;margin-bottom:1.5rem">
+                        Formulário de Encomenda</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Seu Nome *</label>
+                            <input type="text" id="nome" placeholder="Maria da Silva" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">WhatsApp *</label>
+                            <input type="tel" id="telefone" placeholder="(85) 99999-9999" required aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipo">Tipo de Bolo *</label>
+                            <select id="tipo" required aria-required="true">
+                                <option value="">Selecione...</option>
+                                <option>Bolo Tradicional</option>
+                                <option>Bolo Gourmet</option>
+                                <option>Bolo de Casamento</option>
+                                <option>Torta</option>
+                                <option>Kit de Doces</option>
+                                <option>Combo Festa</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="data">Data do Evento *</label>
+                            <input type="date" id="data" required aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="porcoes">Nº de Porções</label>
+                            <select id="porcoes">
+                                <option>10 a 20 porções</option>
+                                <option>20 a 40 porções</option>
+                                <option>40 a 80 porções</option>
+                                <option>80 a 150 porções</option>
+                                <option>Mais de 150 porções</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sabor">Sabor de Preferência</label>
+                            <select id="sabor">
+                                <option>Chocolate</option>
+                                <option>Cenoura</option>
+                                <option>Baunilha</option>
+                                <option>Red Velvet</option>
+                                <option>Limão Siciliano</option>
+                                <option>Morango</option>
+                                <option>Outro / Sem preferência</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="detalhes">Detalhes e Tema do Bolo</label>
+                        <textarea id="detalhes"
+                            placeholder="Descreva o tema, cores, personagens, mensagens ou qualquer detalhe especial que deseje no bolo..."></textarea>
+                    </div>
+                    <button class="btn-full" onclick="submitOrder()">Enviar Encomenda</button>
+                    <p style="text-align:center;font-size:.78rem;color:var(--text-light);margin-top:.8rem">Também pelo
+                        WhatsApp: <a href="https://wa.me/5585998126310?text=Ol%C3%A1%2C%20quero%20aproveitar%20a%20promo%C3%A7%C3%A3o!%20Como%20fa%C3%A7o%20para%20garantir%20a%20minha%3F"
+                            style="color:var(--rose-deep);font-weight:700">(85) 998126310</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contato" class="section">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-tag">Fale Conosco</div>
+                <h2 class="section-title">Entre em contato</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h2>Adoramos conversar!</h2>
+                    <p>Seja para tirar dúvidas, pedir um orçamento ou só bater um papo sobre bolos, estamos aqui.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true"><img src="./img/icons8-endereço-24.png"
+                                alt="imagem de localização"></div>
+                        <div>
+                            <strong>Endereço</strong>
+                            <span>Rua Menor Gerônimo, 1234 · Jardim União - Passaré<br>Fortaleza – CE · CEP
+                                60868685</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true"><img src="./img/icons8-whatsapp-24.png"
+                                alt="imagem de whatsapp"></div>
+                        <div>
+                            <strong>WhatsApp / Telefone</strong>
+                            <a href="https://wa.me/5585998126310?text=Ol%C3%A1%2C%20quero%20aproveitar%20a%20promo%C3%A7%C3%A3o!%20Como%20fa%C3%A7o%20para%20garantir%20a%20minha%3F">(85) 998126310</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true"><img src="./img/icons8-nova-mensagem-24.png"
+                                alt="imagem de e-mail"></div>
+                        <div>
+                            <strong>E-mail</strong>
+                            <a href="mailto:contato@bolosdagloria.com.br">contato@bolosdagloria.com.br</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true"><img src="./img/icons8-hora-2-24.png"
+                                alt="imagem de horário"></div>
+                        <div>
+                            <strong>Horário de Funcionamento</strong>
+                            <div class="hours-grid" style="margin-top:.6rem">
+                                <div class="hours-item"><strong>Seg – Sex</strong><span>8h – 18h</span></div>
+                                <div class="hours-item"><strong>Sábado</strong><span>8h – 16h</span></div>
+                                <div class="hours-item"><strong>Domingo</strong><span>9h – 13h</span></div>
+                                <div class="hours-item"><strong>Feriados</strong><span>Consultar</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links" aria-label="Redes sociais">
+                        <a href="https://wa.me/5585998126310?text=Ol%C3%A1%2C%20quero%20aproveitar%20a%20promo%C3%A7%C3%A3o!%20Como%20fa%C3%A7o%20para%20garantir%20a%20minha%3F" class="social-btn" aria-label="WhatsApp" title="WhatsApp"><img
+                                src="./img/icons8-whatsapp-24.png"></a>
+                        <a href="#" class="social-btn" aria-label="Instagram" title="Instagram"><img
+                                src="./img/icons8-instagram-24.png"></a>
+                        <a href="#" class="social-btn" aria-label="Facebook" title="Facebook"><img
+                                src="./img/icons8-facebook-novo-24.png"></a>
+                        <a href="#" class="social-btn" aria-label="TikTok" title="TikTok"><img
+                                src="./img/icons8-tiktok-24.png"></a>
+                    </div>
+
+                    <div class="map-placeholder" aria-label="Mapa de localização">
+                        <div style="text-align:center">
+                            <div style="font-size:3rem;margin-bottom:.5rem"><img src="./img/icons8-endereço-24.png">
+                            </div>
+                            <p style="color:var(--text-light);font-size:.9rem">Rua Menor Gerônimo, 123<br>Jardim União -
+                                Passaré ·
+                                Fortaleza – CE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form reveal">
+                    <h3
+                        style="font-family:'Playfair Display',serif;color:var(--brown-dark);font-size:1.5rem;margin-bottom:1.5rem">
+                        Envie uma mensagem</h3>
+                    <div class="form-group">
+                        <label for="c_nome">Seu Nome</label>
+                        <input type="text" id="c_nome" placeholder="Maria da Silva">
+                    </div>
+                    <div class="form-group">
+                        <label for="c_email">E-mail</label>
+                        <input type="email" id="c_email" placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="c_assunto">Assunto</label>
+                        <select id="c_assunto">
+                            <option>Dúvidas gerais</option>
+                            <option>Orçamento de encomenda</option>
+                            <option>Parcerias e eventos</option>
+                            <option>Elogio / Feedback</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="c_msg">Mensagem</label>
+                        <textarea id="c_msg" placeholder="Olá, gostaria de saber mais sobre..."
+                            style="min-height:140px"></textarea>
+                    </div>
+                    <button class="btn-full" onclick="submitContact()">Enviar Mensagem</button>
+                    <p
+                        style="margin-top:1.5rem;padding:1rem;background:var(--cream2);border-radius:12px;font-size:.85rem;color:var(--text-mid);text-align:center">
+                        💬 Resposta rápida via WhatsApp!<br>
+                        <a href="https://wa.me/5585998126310?text=Ol%C3%A1%2C%20quero%20aproveitar%20a%20promo%C3%A7%C3%A3o!%20Como%20fa%C3%A7o%20para%20garantir%20a%20minha%3F"
+                            style="color:var(--rose-deep);font-weight:700;text-decoration:none">Clique aqui para falar
+                            agora</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <span class="footer-brand">Bolos da Glória</span>
+                    <p>Confeitaria artesanal com mais de 8 anos adoçando momentos especiais em Fortaleza e região. Cada
+                        bolo é feito com amor, ingredientes selecionados e atenção a cada detalhe.</p>
+                    <div class="footer-social" aria-label="Redes sociais no rodapé">
+                        <a href="#" aria-label="Instagram"><img src="./img/icons8-instagram-24.png"></a>
+                        <a href="#" aria-label="Facebook"><img src="./img/icons8-facebook-novo-24.png"></a>
+                        <a href="#" aria-label="WhatsApp"><img src="./img/icons8-whatsapp-24.png"></a>
+                        <a href="#" aria-label="TikTok"><img src="./img/icons8-tiktok-24.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Especialidades</h4>
+                    <ul class="footer-links">
+                        <li><a href="#cardapio">Bolos Tradicionais</a></li>
+                        <li><a href="#cardapio">Bolos Gourmet</a></li>
+                        <li><a href="#cardapio">Bolos de Casamento</a></li>
+                        <li><a href="#cardapio">Doces Artesanais</a></li>
+                        <li><a href="#cardapio">Tortas</a></li>
+                        <li><a href="#cardapio">Kits Festa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/5585998126310?text=Ol%C3%A1%2C%20quero%20aproveitar%20a%20promo%C3%A7%C3%A3o!%20Como%20fa%C3%A7o%20para%20garantir%20a%20minha%3F"><img src="./img/icons8-whatsapp-20.png"> (85)
+                                998126310</a>
+                        </li>
+                        <li><a href="mailto:contato@bolosdagloria.com.br"><img src="./img/icons8-nova-mensagem-20.png">
+                                contato@bolosdagloria.com.br</a></li>
+                        <li><a href="#contato"><img src="./img/icons8-endereço-20.png"> Rua Menor Gerônimo, 123 - Jardim
+                                União - Passaré</a></li>
+                        <li style="color:white;font-size:.82rem;cursor:default">🕐 Seg–Sex: 8h–18h</li>
+                        <li style="color: white;font-size:.82rem;cursor:default">🕐 Sáb: 8h–16h · Dom:
+                            9h–13h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Bolos da Glória · Todos os direitos reservados · CNPJ 00.000.000/0001-00</p>
+                <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+                    aria-label="Voltar ao topo"><img src="./img/icons8-flecha-grossa-apontando-para-cima-24.png"></button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/5585998126310?text=Ol%C3%A1%2C%20quero%20aproveitar%20a%20promo%C3%A7%C3%A3o!%20Como%20fa%C3%A7o%20para%20garantir%20a%20minha%3F" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Falar no WhatsApp"><img src="./img/icons8-whatsapp.svg" alt="ícone do whatsapp"></a>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
