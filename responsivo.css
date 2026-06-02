@@ -34,6 +34,12 @@
 
 @media(max-width:768px) {
 
+    .nav-logo .loguinho-bolo {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
     .about-stats{
         justify-content: center;
         flex-wrap: wrap;
